@@ -6,12 +6,10 @@ import { ChallengesProvider } from "../contexts/ChallengesContext";
 
 const inter = Inter({ subsets: ["latin"], style: ["normal"] });
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }:any) {
   return (
     <main className={inter.className}>
-      <ChallengesProvider>
         <Component {...pageProps} />
-      </ChallengesProvider>
     </main>
   );
 }
